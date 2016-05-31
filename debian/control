@@ -1,0 +1,27 @@
+Source: python3-toolz
+Section: python
+Priority: optional
+Maintainer: Stefan van der Walt <stefanv@berkeley.edu>
+Vcs-Git: https://github.com/pytoolz/toolz.git -b debian
+Vcs-Browser: https://github.com/pytoolz/toolz
+Standards-Version: 3.9.8
+Build-Depends: debhelper (>= 9), dh-python, python3-all, python3-setuptools,
+               python3-nose, python-docutils, python-sphinx (>= 1.0.7+dfsg-1~)
+X-Python3-Version: >= 3.2
+
+Package: python3-toolz
+Architecture: all
+Depends: ${python3:Depends}, ${misc:Depends}
+Suggests: python3-dask-doc
+Description: Utility functions for iterators, functions, and dictionaries.
+ These functions interoperate well and form the building blocks of
+ common data analytic operations. They extend the Python standard
+ library's itertools and functools and borrow heavily from the
+ standard libraries of contemporary functional languages.
+
+Package: python3-toolz-doc
+Architecture: all
+Depends: ${sphinxdoc:Depends}, ${misc:Depends}
+Section: doc
+Description: Utility functions for iterators, functions, and dictionaries.
+ This is the documentation package.

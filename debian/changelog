@@ -1,0 +1,5 @@
+python3-toolz (0.7.4-1) unstable; urgency=medium
+
+  * Initial release (closes: #817779)
+
+ -- Stefan van der Walt <stefanv@berkeley.edu>  Sat, 04 Jun 2016 21:40:59 -0700
